@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+        Login Form
+        </title>
+    </head>
+    <body>
+    <form action="validate/" method="POST">
+{#        인풋 히든으로 csrf 토큰 들어감#}
+        {% csrf_token %}
+        {{ login_form }}
+        <input type="submit" value="로그인">
+
+    </form>
+
+    </body>
+</html>
